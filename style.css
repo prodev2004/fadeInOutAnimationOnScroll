@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+    padding: 5rem;
+    overflow-x: hidden;
+    padding-top: 15rem;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1 {
+    margin: 1rem 0;
+    color: #fff;
+    text-shadow: 0 0 .2rem #fff;
+    text-align: center;
+}
+.box {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 .5rem rgba(255, 255, 255, .5);
+    background-position: center;
+    margin: 2rem 0;
+    border-radius: .5rem;
+    opacity: 0;
+    transition: 200ms ease-in-out transform,
+                200ms ease-in-out opacity;
+}
+.box h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, .5);
+    text-shadow: 0 0 .5rem #000;
+    letter-spacing: .2rem;
+}
+
+.box1 {
+    background-image: url(https://unsplash.it/400/300);
+    transform: translateX(100%);
+}
+.box2 {
+    background-image: url(https://unsplash.it/500/400);
+    transform: translateX(-100%);
+}
+.box3 {
+    background-image: url(https://unsplash.it/600/300);
+    transform: translateX(100%);
+}
+.box4 {
+    background-image: url(https://unsplash.it/600/400);
+    transform: translateX(-100%);
+}
+.box5 {
+    background-image: url(https://unsplash.it/500/400);
+    transform: translateX(100%);
+}
+.box6 {
+    background-image: url(https://unsplash.it/600/200);
+    transform: translateX(-100%);
+}
+
+
+.show_content {
+    opacity: 1;
+    transform: translateX(0);
+}
